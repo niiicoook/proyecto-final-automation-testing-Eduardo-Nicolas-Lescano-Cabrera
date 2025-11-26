@@ -2,7 +2,7 @@ from data.datos_login import DATA
 from page.logueo_pagina import Login
 import pytest
 
-@pytest.mark.parametrize("username", "password", "bool", DATA)
+@pytest.mark.parametrize("username, password, bool", DATA)
 def test_login(driver_conf, username, password, bool ):
     loginPage = Login(driver_conf)
     loginPage.open()
