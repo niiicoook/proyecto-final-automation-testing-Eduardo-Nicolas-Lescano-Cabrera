@@ -15,7 +15,7 @@ class Login:
     def open(self):
         self.driver.get(URL)
 
-    def user(self, username = USERNAME, password = PASSWORD):
+    def user(self, username, password):
         WebDriverWait(self.driver, 5).until(EC.element_to_be_clickable(self._USER_NAME)).send_keys(username)
         WebDriverWait(self.driver, 5).until(EC.element_to_be_clickable(self._USER_PASSWORD)).send_keys(password)
         WebDriverWait(self.driver, 5).until(EC.element_to_be_clickable(self.BUTTOM)).click()

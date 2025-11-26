@@ -1,7 +1,16 @@
+from data.datos_login import DATA
 from page.logueo_pagina import Login
+import pytest
 
-def test_login(driver_conf):
+@pytest.mark.parametrize("username", "password", "bool", DATA)
+def test_login(driver_conf, username, password, bool ):
     loginPage = Login(driver_conf)
     loginPage.open()
-    loginPage.user()
+    loginPage.user(username, password)
+
+    if bool: 
+        assert "inventory.html" in driver_conf.current_url
+    else:
+        assert "inventory.html" not in driver_conf.current_url
+
 
