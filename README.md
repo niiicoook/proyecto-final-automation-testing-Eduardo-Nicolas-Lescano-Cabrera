@@ -45,6 +45,14 @@ pip install pytest-html
 pip install webdriver-manager
 
 ```
+```
+
+#### 3.1. Importar dependencias que no se necesitan instalar
+```bash
+import os
+import csv
+import json
+```
 ## Como ejecutar las pruebas
 #### Ejecutar todos los suits de prueba
 
