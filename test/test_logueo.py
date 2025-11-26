@@ -1,8 +1,8 @@
-from data.datos_login import DATA
+from utils.funciones import get_csv
 from page.logueo_pagina import Login
 import pytest
 
-@pytest.mark.parametrize("username, password, bool", DATA)
+@pytest.mark.parametrize("username, password, bool", get_csv())
 def test_login(driver_conf, username, password, bool ):
     loginPage = Login(driver_conf)
     loginPage.open()
