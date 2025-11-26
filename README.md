@@ -45,9 +45,8 @@ pip install pytest-html
 pip install webdriver-manager
 
 ```
+### 3.1 Importar dependencias nativas de python
 ```
-
-#### 3.1. Importar dependencias que no se necesitan instalar
 ```bash
 import os
 import csv
