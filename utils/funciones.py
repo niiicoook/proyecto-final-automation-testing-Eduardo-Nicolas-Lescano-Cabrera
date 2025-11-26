@@ -72,7 +72,12 @@ def entrar_carrito(driver):
 
 
 def get_csv(file = "data_login.csv"):
-    
+    """
+    arg: file representa el nombre del archivo a abrir
+    return: una lista te tumplas con los elementos del csv
+    """
+
+
     current_file = os.path.dirname(__file__)
     file = os.path.join(current_file, "..", "data", file)
 
@@ -95,7 +100,10 @@ def get_csv(file = "data_login.csv"):
 
 
 def get_json(file = "data_login.json"):
-    
+    """
+    arg: file representa el nombre del archivo a abrir
+    return: una lista te tumplas con los elementos del json
+    """
     current_file = os.path.dirname(__file__)
     file = os.path.join(current_file, "..", "data", file)
 
