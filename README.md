@@ -58,7 +58,7 @@ import json
 pytest tests/test_saucedemo.py
 ```
 
-#### Ejecutar test especificop
+#### Ejecutar test especifico
 ```bash
 pytest funcion() -k
 ```
