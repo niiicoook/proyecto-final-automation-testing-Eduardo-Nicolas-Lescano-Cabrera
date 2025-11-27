@@ -45,6 +45,12 @@ pip install pytest-html
 pip install webdriver-manager
 
 ```
+#### 3.1 Importar dependencias nativas de python
+```bash
+import os
+import csv
+import json
+```
 ## Como ejecutar las pruebas
 #### Ejecutar todos los suits de prueba
 
@@ -52,7 +58,7 @@ pip install webdriver-manager
 pytest tests/test_saucedemo.py
 ```
 
-#### Ejecutar test especificop
+#### Ejecutar test especifico
 ```bash
 pytest funcion() -k
 ```
