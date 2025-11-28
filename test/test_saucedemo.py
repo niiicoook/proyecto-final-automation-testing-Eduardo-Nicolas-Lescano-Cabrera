@@ -1,3 +1,7 @@
+"""
+Esta parte esta comentada para asi poder testear desde las funciones armadas con POM
+"""
+
 # import pytest
 # from selenium.webdriver.common.by import By
 # import sys
